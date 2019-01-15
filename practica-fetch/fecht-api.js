@@ -33,5 +33,17 @@ function traer(){
     }) 
 }
 function tabla(data){
-    console.log(data)
+    // console.log(data)
+    // contenido.innerHTML = ''
+    for(let valor of data){
+        // console.log(i.nombre)
+        contenido.innerHTML += `
+        <tr>
+        <th scope="row">${valor.id}</th>
+        <td>${valor.nombre}</td>
+        <td>${valor.email}</td>
+        <td>${valor.estado ? 'Activo': 'Eliminado'}</td>
+      </tr>`
+
+    }
 }
