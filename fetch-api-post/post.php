@@ -8,3 +8,5 @@ if($usuario === '' || $pass=== ''){
 }else{
     echo json_encode('Correcto: <br>Usuario:'.$usuario.'<br>Pass:'.$pass);
 }
+
+?>
